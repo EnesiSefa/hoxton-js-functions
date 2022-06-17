@@ -53,10 +53,15 @@ function add(a,b) {
   // Action: Check how many years are left until adulthood (18)
   // Output: The result (number)
   function yearsToAdulthood(age) {
-     return 
+      let yearsLeft = 18 - age
+    if(yearsLeft <= 0){
+        return (` You are already an adult `)
+    }else{
+        return (` you have ${yearsLeft} years left `)
+    }
     
-
-    // write your code here
+        
+// write your code here
   }
   
   // Input: person ({ age: number, name: string })
@@ -66,6 +71,8 @@ function add(a,b) {
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
   function admit() {
+    
+    
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
   }
