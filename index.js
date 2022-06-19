@@ -33,9 +33,8 @@ function add(a,b) {
   // Action: Greet the user by name
   // Output: The greeting (string)
   function greet(name = "") {
-    let message = `Hello ${name}!`
-    console.log(message)
-    return message
+    return name = "Hello " + name
+    
     
     // write your code here
   }
@@ -70,8 +69,7 @@ function add(a,b) {
   //   - if they are, greet them
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
-  function admit() {
-    
+  function admit() {   
     
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
