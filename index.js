@@ -69,9 +69,16 @@ function add(a,b) {
   //   - if they are, greet them
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
-  function admit() {   
+  function admit(person) {
+    if(isAnAdult(person.age)){
+      console.log(greet(person.name))
+    } else{
+      console.log(`come back in ${yearsToAdulthood(person.age)} years`)
+    }  
     
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
   }
+  let person ={age: 20 , name : "Enesi"}
+    admit(person)
   
